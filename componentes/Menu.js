@@ -7,7 +7,11 @@ const Menu = () => {
   const tema = useTheme();
   return (
     <>
-      <AppBar elevation="0" sx={{ bgcolor: tema.palette.background.default }}>
+      <AppBar
+        elevation="0"
+        position="sticky"
+        sx={{ bgcolor: tema.palette.background.default }}
+      >
         <Toolbar
           sx={{
             display: "flex",
