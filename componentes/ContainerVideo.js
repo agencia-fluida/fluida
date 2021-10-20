@@ -13,7 +13,7 @@ const ContainerVideo = ({ altura, videoSrc, children }) => {
           width: "100%",
           height: altura,
           bgcolor: tema.palette.primary.main,
-          marginY: "30px",
+          marginY: "20px",
           borderRadius: 0,
           position: "relative",
         }}
@@ -30,7 +30,7 @@ const ContainerVideo = ({ altura, videoSrc, children }) => {
           muted
           loop
         >
-          <source src={videoSrc} type="video/mp4" />
+          <source src={videoSrc} type="video/webm" />
         </video>
 
         <Box
