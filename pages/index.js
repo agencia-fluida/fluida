@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import Banner from "../componentes/Banner";
+
 const Index = () => {
   return (
     <>
@@ -13,7 +15,7 @@ const Index = () => {
         <link rel="icon" href="/img/logoFluida.png" />
       </Head>
 
-      <h1>Fluída</h1>
+      <Banner />
     </>
   );
 };

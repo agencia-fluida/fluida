@@ -13,6 +13,7 @@ const BotaoMenu = ({ children }) => {
           fontSize: "16px",
           fontWeight: "normal",
           transitionDuration: "0s",
+          marginLeft: "40px",
           "&:hover": {
             background: "none",
             borderTop: `2px solid ${tema.palette.primary.main}`,
