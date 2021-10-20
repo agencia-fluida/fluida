@@ -1,16 +1,43 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/*Fontes*/
+@font-face {
+  /*liquido fluido*/
+  font-family: fluido;
+  src: url(/fontes/LIQUIDO-Fluid.otf);
+}
+
+@font-face {
+  /*Prompt light*/
+  font-family: padrao;
+  src: url(/fontes/Prompt-Thin.ttf);
+  font-weight: 300;
+  font-style: light;
+}
+
+@font-face {
+  /*Prompt light*/
+  font-family: padrao;
+  src: url(/fontes/Prompt-Light.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  /*Prompt light*/
+  font-family: padrao;
+  src: url(/fontes/Prompt-Medium.ttf);
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  /*Prompt light*/
+  font-family: padrao;
+  src: url(/fontes/Prompt-Bold.ttf);
+  font-weight: 700;
+  font-style: bold;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
