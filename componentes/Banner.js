@@ -11,7 +11,7 @@ const Banner = () => {
       <Box sx={{ paddingX: "10%", display: "flex", flexDirection: "column" }}>
         <Retangulo />
 
-        <ContainerVideo altura="700px" videoSrc="/img/fundoInicio.mp4">
+        <ContainerVideo altura="650px" videoSrc="/img/fundoInicio.webm">
           <Box sx={{ margin: "auto" }}>
             <Image
               src="/img/logoFluida.png"
