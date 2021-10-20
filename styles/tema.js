@@ -6,8 +6,12 @@ const tema = createTheme({
     background: {
       default: "#262626",
     },
-    primary: "#797ef6",
-    secondary: "#7dd6f6",
+    primary: {
+      main: "#797ef6",
+    },
+    secondary: {
+      main: "#7dd6f6",
+    },
   },
   typography: {
     fontFamily: "padrao",
