@@ -5,6 +5,7 @@ import "@fontsource/roboto/700.css";
 import "../styles/globals.css";
 
 import Head from "next/head";
+import { CssBaseline } from "@mui/material";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
+      <CssBaseline />
       <Component {...pageProps} />
     </>
   );
