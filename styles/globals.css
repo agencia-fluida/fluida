@@ -1,3 +1,22 @@
+/*Fontes*/
+@font-face {
+  /*liquido fluido*/
+  font-family: fluido;
+  src: url(/fontes/LIQUIDO-Fluid.otf);
+}
+
+@font-face {
+  /*liquido regular*/
+  font-family: liquido;
+  src: url(/fontes/LIQUIDO-Reguar.otf);
+}
+
+@font-face {
+  /*Prompt light*/
+  font-family: padrao;
+  src: url(/fontes/Prompt-Light.ttf);
+}
+
 a {
   color: inherit;
   text-decoration: none;
