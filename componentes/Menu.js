@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <>
       <AppBar
-        elevation="0"
+        elevation={0}
         position="sticky"
         sx={{ bgcolor: tema.palette.background.default }}
       >

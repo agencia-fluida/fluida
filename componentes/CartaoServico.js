@@ -41,21 +41,13 @@ const CartaoServico = ({ imagem, titulo, servicos }) => {
             {titulo}
           </Typography>
 
-          <List sx={{ marginTop: "30px" }}>
-            <ul
-              style={{
-                listStyleType: "disc",
-              }}
-            >
-              {servicos.map((servico, index) => (
-                <ListItem key={index} dense>
-                  <ListItemText>
-                    <li>{servico}</li>
-                  </ListItemText>
-                </ListItem>
-              ))}
-            </ul>
-          </List>
+          <ul style={{ marginTop: "30px" }}>
+            {servicos.map((servico, index) => (
+              <li key={index} style={{ marginTop: "15px" }}>
+                {servico}
+              </li>
+            ))}
+          </ul>
         </CardContent>
       </Card>
     </>

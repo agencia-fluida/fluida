@@ -16,8 +16,8 @@ const TextoFluido = ({ children }) => {
             display: "block",
             content: `"${children}"`,
             marginBottom: "-80px",
-            "-webkit-text-stroke": "2px white",
-            "-webkit-text-fill-color": "transparent",
+            WebkitTextStroke: "2px white",
+            WebkitTextFillColor: "transparent",
             zIndex: "2",
           },
           "&::after": {
@@ -25,8 +25,8 @@ const TextoFluido = ({ children }) => {
             display: "block",
             content: `"${children}"`,
             marginTop: "-80px",
-            "-webkit-text-stroke": "3px white",
-            "-webkit-text-fill-color": "transparent",
+            WebkitTextStroke: "3px white",
+            WebkitTextFillColor: "transparent",
             zIndex: "2",
           },
         }}
