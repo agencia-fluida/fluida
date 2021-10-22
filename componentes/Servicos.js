@@ -1,5 +1,6 @@
 import { Container, Box } from "@mui/material";
 
+import TituloServicos from "./TituloServicos";
 import CartaoServico from "./CartaoServico";
 
 const Servicos = () => {
@@ -49,23 +50,27 @@ const Servicos = () => {
   ];
   return (
     <>
-      <Box
-        sx={{
-          width: "80%",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr 1fr",
-          gridGap: "20px",
-          margin: "auto",
-        }}
-      >
-        {categorias.map((categoria, index) => (
-          <CartaoServico
-            key={index}
-            titulo={categoria.titulo}
-            imagem={categoria.imagem}
-            servicos={categoria.servicos}
-          />
-        ))}
+      <Box>
+        <TituloServicos />
+
+        <Box
+          sx={{
+            width: "80%",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            gridGap: "20px",
+            margin: "auto",
+          }}
+        >
+          {categorias.map((categoria, index) => (
+            <CartaoServico
+              key={index}
+              titulo={categoria.titulo}
+              imagem={categoria.imagem}
+              servicos={categoria.servicos}
+            />
+          ))}
+        </Box>
       </Box>
     </>
   );
