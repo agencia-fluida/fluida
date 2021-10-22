@@ -6,6 +6,12 @@
 }
 
 @font-face {
+  /*liquido regular*/
+  font-family: liquido;
+  src: url(/fontes/LIQUIDO-Reguar.otf);
+}
+
+@font-face {
   /*Prompt light*/
   font-family: padrao;
   src: url(/fontes/Prompt-Thin.ttf);
