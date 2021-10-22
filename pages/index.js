@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import { Box } from "@mui/material";
+
 import Banner from "../componentes/Banner";
+import Servicos from "../componentes/Servicos";
 
 const Index = () => {
   return (
@@ -15,7 +18,18 @@ const Index = () => {
         <link rel="icon" href="/img/logoFluida.png" />
       </Head>
 
-      <Banner />
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "100%",
+          gridTemplateRows: "auto",
+          gridGap: "50px",
+        }}
+      >
+        <Banner />
+
+        <Servicos />
+      </Box>
     </>
   );
 };
