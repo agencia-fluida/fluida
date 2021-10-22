@@ -24,6 +24,7 @@ const Index = () => {
           gridTemplateColumns: "100%",
           gridTemplateRows: "auto",
           gridGap: "50px",
+          paddingY: "100px",
         }}
       >
         <Banner />

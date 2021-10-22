@@ -3,6 +3,8 @@ import { useTheme } from "@emotion/react";
 
 import Image from "next/image";
 
+import TextoFluido from "./TextoFluido";
+
 const TituloServicos = () => {
   const tema = useTheme();
 
@@ -11,7 +13,7 @@ const TituloServicos = () => {
       <Box
         sx={{
           margin: "auto",
-          width: "60%",
+          maxWidth: "70%",
           height: "800px",
           position: "relative",
         }}
@@ -24,34 +26,7 @@ const TituloServicos = () => {
             zIndex: "3",
           }}
         >
-          <Typography
-            variant="h1"
-            sx={{
-              fontFamily: "fluido",
-              fontSize: "150px",
-              color: tema.palette.secondary.main,
-              "&::before": {
-                color: "white",
-                display: "block",
-                content: `"Nossos servicos"`,
-                marginBottom: "-80px",
-                "-webkit-text-stroke": "2px white",
-                "-webkit-text-fill-color": "transparent",
-                zIndex: "2",
-              },
-              "&::after": {
-                color: "white",
-                display: "block",
-                content: `"Nossos servicos"`,
-                marginTop: "-80px",
-                "-webkit-text-stroke": "3px white",
-                "-webkit-text-fill-color": "transparent",
-                zIndex: "2",
-              },
-            }}
-          >
-            Nossos servicos
-          </Typography>
+          <TextoFluido>Nossos servicos</TextoFluido>
         </Box>
         <Box
           sx={{

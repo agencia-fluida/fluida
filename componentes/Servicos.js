@@ -60,6 +60,7 @@ const Servicos = () => {
             gridTemplateColumns: "1fr 1fr 1fr 1fr",
             gridGap: "20px",
             margin: "auto",
+            marginTop: "100px",
           }}
         >
           {categorias.map((categoria, index) => (
