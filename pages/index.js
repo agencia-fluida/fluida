@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 
 import Banner from "../componentes/Banner";
 import Servicos from "../componentes/Servicos";
+import Flutuantes from "../componentes/Flutuantes";
 
 const Index = () => {
   return (
@@ -20,16 +21,16 @@ const Index = () => {
 
       <Box
         sx={{
-          display: "grid",
-          gridTemplateColumns: "100%",
-          gridTemplateRows: "auto",
-          gridGap: "50px",
+          display: "flex",
+          flexDirection: "column",
           paddingY: "100px",
         }}
       >
         <Banner />
 
         <Servicos />
+
+        <Flutuantes />
       </Box>
     </>
   );
