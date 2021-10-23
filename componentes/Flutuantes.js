@@ -53,9 +53,10 @@ const Flutuantes = () => {
     <>
       <Box
         sx={{
-          width: "80%",
+          width: "100%",
           position: "relative",
           alignSelf: "center",
+          marginTop: "100px",
         }}
       >
         <Box

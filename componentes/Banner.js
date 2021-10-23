@@ -8,7 +8,17 @@ import ContainerVideo from "./ContainerVideo";
 const Banner = () => {
   return (
     <>
-      <Box sx={{ paddingX: "10%", display: "flex", flexDirection: "column" }}>
+      <Box
+        sx={{
+          maxWidth: {
+            xl: "90%",
+            sm: "lg",
+          },
+          margin: "auto",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
         <Retangulo />
 
         <ContainerVideo altura="650px" videoSrc="/img/fundoInicio.webm">

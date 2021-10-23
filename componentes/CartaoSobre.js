@@ -20,7 +20,9 @@ const CartaoSobre = ({ toggleMostrar }) => {
           }}
         />
 
-        <CardContent sx={{ padding: "40px", paddingBottom: "60px" }}>
+        <CardContent
+          sx={{ padding: "40px", paddingBottom: "60px", paddingTop: "100px" }}
+        >
           <Typography>
             A Fluída valoriza e desenvolve a diversidade dentro da comunicação.
           </Typography>

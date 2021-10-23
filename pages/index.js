@@ -20,15 +20,21 @@ const Index = () => {
         <link rel="icon" href="/img/logoFluida.png" />
       </Head>
 
+      <Banner />
+
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           paddingY: "100px",
+          maxWidth: "xl",
+          margin: "auto",
+          paddingX: {
+            xl: "0",
+            sm: "10%",
+          },
         }}
       >
-        <Banner />
-
         <Sobre />
 
         <Servicos />

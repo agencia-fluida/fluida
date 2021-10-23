@@ -50,12 +50,12 @@ const Servicos = () => {
   ];
   return (
     <>
-      <Box>
+      <Box sx={{ marginTop: "100px" }}>
         <TituloServicos />
 
         <Box
           sx={{
-            width: "80%",
+            maxWidth: "xl",
             display: "grid",
             gridTemplateColumns: "1fr 1fr 1fr 1fr",
             gridGap: "20px",

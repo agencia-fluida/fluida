@@ -8,7 +8,7 @@ const CartaoDetalhes = () => {
   return (
     <>
       <CartaoBase sx={{ marginLeft: "30px" }}>
-        <CardContent sx={{ padding: "40px" }}>
+        <CardContent sx={{ padding: "40px", paddingTop: "100px" }}>
           <Typography>
             Aqui propomos uma nova forma de organização com um formato fluído de
             trabalho, sem hierarquia, onde pessoas não são colocadas em

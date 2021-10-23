@@ -20,13 +20,14 @@ const Sobre = () => {
 
   return (
     <>
-      <Box sx={{ maxWidth: "md", margin: "auto", marginY: "100px" }}>
+      <Box sx={{ margin: "auto", marginY: "100px" }}>
         <TituloSobre />
         <Box
           sx={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             alignItems: "start",
+            maxWidth: "xl",
           }}
         >
           <CartaoSobre toggleMostrar={toggleMostrar} />

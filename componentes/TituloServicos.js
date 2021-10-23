@@ -13,7 +13,7 @@ const TituloServicos = () => {
       <Box
         sx={{
           margin: "auto",
-          maxWidth: "70%",
+          maxWidth: "lg",
           height: "800px",
           position: "relative",
         }}

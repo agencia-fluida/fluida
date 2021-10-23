@@ -7,17 +7,18 @@ const TituloSobre = () => {
     <>
       <Box
         sx={{
-          maxWidth: "md",
+          maxWidth: "lg",
           height: "800px",
           position: "relative",
           bottom: "-50px",
+          margin: "auto",
         }}
       >
         <Box
           sx={{
             position: "absolute",
-            left: "-25px",
-            top: "-50px",
+            left: "25px",
+            top: "-100px",
             zIndex: "3",
           }}
         >
@@ -45,16 +46,16 @@ const TituloSobre = () => {
         <Box
           sx={{
             position: "absolute",
-            top: "200px",
-            left: "200px",
+            top: "120px",
+            left: "300px",
             zIndex: "2",
           }}
         >
           <Image
             src="/img/sobre/quatroMeninas.jpg"
             alt="Quatro meninas"
-            width={500}
-            height={500}
+            width={600}
+            height={600}
           />
         </Box>
 
@@ -65,7 +66,7 @@ const TituloSobre = () => {
             src="/img/sobre/fundo.jpg"
             alt="Fundo colorido"
             width={500}
-            height={700}
+            height={750}
           />
         </Box>
       </Box>
