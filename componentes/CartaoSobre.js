@@ -1,20 +1,13 @@
 import { Card, CardContent, Typography, Button } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
+import CartaoBase from "./CartaoBase";
+
 const CartaoSobre = () => {
   const tema = useTheme();
   return (
     <>
-      <Card
-        sx={{
-          border: "2px solid white",
-          borderRadius: "0",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          overflow: "visible",
-        }}
-      >
+      <CartaoBase>
         <CardContent sx={{ padding: "30px" }}>
           <Typography>
             A Fluída valoriza e desenvolve a diversidade dentro da comunicação.
@@ -35,8 +28,8 @@ const CartaoSobre = () => {
         <Button
           variant="contained"
           sx={{
-            position: "relative",
-            top: "20px",
+            position: "absolute",
+            bottom: "-30px",
             bgcolor: tema.palette.background.default,
             elevation: 0,
             border: "2px solid #fff",
@@ -48,7 +41,7 @@ const CartaoSobre = () => {
         >
           Saiba mais
         </Button>
-      </Card>
+      </CartaoBase>
     </>
   );
 };
