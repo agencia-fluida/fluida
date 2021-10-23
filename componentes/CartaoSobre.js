@@ -1,13 +1,25 @@
-import { Card, CardContent, Typography, Button } from "@mui/material";
+import { Card, CardContent, Typography, Button, Paper } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
 import CartaoBase from "./CartaoBase";
 
-const CartaoSobre = () => {
+const CartaoSobre = ({ toggleMostrar }) => {
   const tema = useTheme();
   return (
     <>
       <CartaoBase>
+        <Paper
+          sx={{
+            bgcolor: tema.palette.secondary.main,
+            width: "15px",
+            height: "250px",
+            borderRadius: "0",
+            position: "absolute",
+            top: "40px",
+            left: "-15px",
+          }}
+        />
+
         <CardContent sx={{ padding: "40px", paddingBottom: "60px" }}>
           <Typography>
             A Fluída valoriza e desenvolve a diversidade dentro da comunicação.
@@ -38,6 +50,7 @@ const CartaoSobre = () => {
             fontSize: "18px",
             fontWeight: "700",
           }}
+          onClick={toggleMostrar}
         >
           Saiba mais
         </Button>
