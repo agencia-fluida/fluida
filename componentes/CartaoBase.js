@@ -13,6 +13,7 @@ const CartaoBase = ({ children }) => {
           flexDirection: "column",
           alignItems: "center",
           overflow: "visible",
+          position: "relative",
         }}
       >
         {children}
