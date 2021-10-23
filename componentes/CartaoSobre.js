@@ -8,7 +8,7 @@ const CartaoSobre = () => {
   return (
     <>
       <CartaoBase>
-        <CardContent sx={{ padding: "30px" }}>
+        <CardContent sx={{ padding: "40px", paddingBottom: "60px" }}>
           <Typography>
             A Fluída valoriza e desenvolve a diversidade dentro da comunicação.
           </Typography>
