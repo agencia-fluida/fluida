@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Box } from "@mui/material";
 
 import Banner from "../componentes/Banner";
+import Sobre from "../componentes/Sobre";
 import Servicos from "../componentes/Servicos";
 import Flutuantes from "../componentes/Flutuantes";
 
@@ -27,6 +28,8 @@ const Index = () => {
         }}
       >
         <Banner />
+
+        <Sobre />
 
         <Servicos />
 
