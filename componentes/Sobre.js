@@ -4,6 +4,7 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 
 import { useTheme } from "@emotion/react";
 
+import TituloSobre from "./TituloSobre";
 import CartaoSobre from "./CartaoSobre";
 import CartaoDetalhes from "./CartaoDetalhes";
 import FundoDetalhes from "./FundoDetalhes";
@@ -20,6 +21,7 @@ const Sobre = () => {
   return (
     <>
       <Box sx={{ maxWidth: "md", margin: "auto", marginY: "100px" }}>
+        <TituloSobre />
         <Box
           sx={{
             display: "grid",
