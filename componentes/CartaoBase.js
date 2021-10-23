@@ -1,7 +1,7 @@
 import { Card, CardContent, Typography, Button } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
-const CartaoBase = ({ children }) => {
+const CartaoBase = ({ sx, children }) => {
   const tema = useTheme();
   return (
     <>
@@ -14,6 +14,7 @@ const CartaoBase = ({ children }) => {
           alignItems: "center",
           overflow: "visible",
           position: "relative",
+          ...sx,
         }}
       >
         {children}

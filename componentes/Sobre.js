@@ -6,6 +6,7 @@ import { useTheme } from "@emotion/react";
 
 import CartaoSobre from "./CartaoSobre";
 import CartaoDetalhes from "./CartaoDetalhes";
+import FundoDetalhes from "./FundoDetalhes";
 
 const Sobre = () => {
   const tema = useTheme();
@@ -23,13 +24,12 @@ const Sobre = () => {
           sx={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            gridGap: "30px",
             alignItems: "start",
           }}
         >
           <CartaoSobre toggleMostrar={toggleMostrar} />
 
-          {mostrarDetalhes ? <CartaoDetalhes /> : <></>}
+          {mostrarDetalhes ? <CartaoDetalhes /> : <FundoDetalhes />}
         </Box>
       </Box>
     </>

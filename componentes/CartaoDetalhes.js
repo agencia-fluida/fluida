@@ -7,7 +7,7 @@ const CartaoDetalhes = () => {
   const tema = useTheme();
   return (
     <>
-      <CartaoBase>
+      <CartaoBase sx={{ marginLeft: "30px" }}>
         <CardContent sx={{ padding: "40px" }}>
           <Typography>
             Aqui propomos uma nova forma de organização com um formato fluído de
