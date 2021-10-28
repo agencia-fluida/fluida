@@ -1,5 +1,7 @@
-import { AppBar, Toolbar, Button } from "@mui/material";
+import { Box, AppBar, Toolbar, Button, IconButton } from "@mui/material";
 import { useTheme } from "@emotion/react";
+
+import { Menu as MenuIcon } from "@mui/icons-material";
 
 import BotaoMenu from "./BotaoMenu";
 
@@ -16,12 +18,37 @@ const Menu = () => {
           sx={{
             display: "flex",
             justifyContent: "end",
-            paddingX: "30px",
+            paddingX: {
+              md: "30px",
+            },
           }}
         >
-          <BotaoMenu>Home</BotaoMenu>
-          <BotaoMenu>Seja uma flutuante</BotaoMenu>
-          <BotaoMenu>Mande seu briefing</BotaoMenu>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                md: "block",
+              },
+            }}
+          >
+            <BotaoMenu>Home</BotaoMenu>
+            <BotaoMenu>Seja uma flutuante</BotaoMenu>
+            <BotaoMenu>Mande seu briefing</BotaoMenu>
+          </Box>
+
+          <IconButton
+            size="large"
+            edge="end"
+            color="inherit"
+            aria-label="menu"
+            sx={{
+              display: {
+                md: "none",
+              },
+            }}
+          >
+            <MenuIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </>

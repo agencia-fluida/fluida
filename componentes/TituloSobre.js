@@ -27,7 +27,7 @@ const TituloSobre = () => {
             component="h2"
             sx={{
               fontFamily: "fluido",
-              fontSize: "100px",
+              fontSize: "80px",
               display: {
                 xs: "inline-block",
                 md: "block",
@@ -46,7 +46,7 @@ const TituloSobre = () => {
                 md: "60px",
                 xs: "20px",
               },
-              fontSize: "100px",
+              fontSize: "80px",
               display: {
                 xs: "inline-block",
                 md: "block",
