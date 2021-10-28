@@ -8,9 +8,7 @@ import Head from "next/head";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import tema from "../styles/tema";
 
-
 import Menu from "../componentes/Menu";
-
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,7 +18,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={tema}>
         <CssBaseline />
-
 
         <Menu />
 
