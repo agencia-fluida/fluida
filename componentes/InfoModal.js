@@ -22,7 +22,12 @@ const InfoModal = ({ open, onClose, children }) => {
         }}
       >
         <Box>
-          <Card>
+          <Card
+            sx={{
+              maxHeight: "80vh",
+              overflow: "scroll",
+            }}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -31,11 +36,19 @@ const InfoModal = ({ open, onClose, children }) => {
                 paddingRight: "10px",
               }}
             >
-              <IconButton aria-label="close" onClick={onClose}>
+              <IconButton
+                aria-label="close"
+                onClick={onClose}
+                sx={{
+                  position: "fixed",
+                }}
+              >
                 <CloseIcon />
               </IconButton>
             </Box>
-            <CardContent sx={{ paddingX: "30px" }}>{children}</CardContent>
+            <CardContent sx={{ paddingX: "30px", marginTop: "20px" }}>
+              {children}
+            </CardContent>
           </Card>
         </Box>
       </Modal>
