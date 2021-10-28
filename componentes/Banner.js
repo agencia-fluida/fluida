@@ -38,7 +38,10 @@ const Banner = () => {
           <Typography
             sx={{
               zIndex: "inherit",
-              fontSize: "22px",
+              fontSize: {
+                xs: "20px",
+                md: "25px",
+              },
               fontWeight: "500",
               textTransform: "uppercase",
               alignSelf: {

@@ -8,7 +8,10 @@ const TituloSobre = () => {
       <Box
         sx={{
           maxWidth: "lg",
-          maxHeight: "80vh",
+          maxHeight: {
+            xs: "80vh",
+            md: "100vh",
+          },
           position: "relative",
           margin: "auto",
           zIndex: "3",
@@ -17,8 +20,8 @@ const TituloSobre = () => {
         <Box
           sx={{
             position: "absolute",
-            left: "25px",
-            top: "-100px",
+            right: "30%",
+            top: "-10%",
             zIndex: "3",
           }}
         >
@@ -27,7 +30,10 @@ const TituloSobre = () => {
             component="h2"
             sx={{
               fontFamily: "fluido",
-              fontSize: "80px",
+              fontSize: {
+                xs: "80px",
+                md: "150px",
+              },
               display: {
                 xs: "inline-block",
                 md: "block",
@@ -46,7 +52,10 @@ const TituloSobre = () => {
                 md: "60px",
                 xs: "20px",
               },
-              fontSize: "80px",
+              fontSize: {
+                xs: "80px",
+                md: "150px",
+              },
               display: {
                 xs: "inline-block",
                 md: "block",
@@ -61,7 +70,10 @@ const TituloSobre = () => {
           sx={{
             width: "100%",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: {
+              xs: "center",
+              md: "start",
+            },
             alignItems: "center",
             zIndex: "3",
           }}

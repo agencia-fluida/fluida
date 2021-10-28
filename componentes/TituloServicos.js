@@ -14,7 +14,10 @@ const TituloServicos = () => {
         sx={{
           margin: "auto",
           maxWidth: "lg",
-          maxHeight: "80vh",
+          maxHeight: {
+            xs: "80vh",
+            md: "100vh",
+          },
           position: "relative",
         }}
       >
@@ -39,7 +42,10 @@ const TituloServicos = () => {
           sx={{
             width: "100%",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: {
+              xs: "center",
+              md: "end",
+            },
             alignItems: "center",
             zIndex: "3",
           }}

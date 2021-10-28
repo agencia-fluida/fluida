@@ -99,7 +99,7 @@ const Flutuantes = () => {
           component="h2"
           sx={{
             fontFamily: "fluido",
-            fontSize: "100px",
+            fontSize: "80px",
             display: {
               xs: "block",
               md: "none",
