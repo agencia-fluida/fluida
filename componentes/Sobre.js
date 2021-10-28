@@ -25,7 +25,10 @@ const Sobre = () => {
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: {
+              xs: "1fr",
+              md: "1fr 1fr",
+            },
             alignItems: "start",
             maxWidth: "xl",
           }}
