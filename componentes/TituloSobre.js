@@ -8,10 +8,10 @@ const TituloSobre = () => {
       <Box
         sx={{
           maxWidth: "lg",
-          height: "800px",
+          maxHeight: "80vh",
           position: "relative",
-          bottom: "-50px",
           margin: "auto",
+          zIndex: "3",
         }}
       >
         <Box
@@ -25,7 +25,14 @@ const TituloSobre = () => {
           <Typography
             variant="h1"
             component="h2"
-            sx={{ fontFamily: "fluido", fontSize: "150px" }}
+            sx={{
+              fontFamily: "fluido",
+              fontSize: "100px",
+              display: {
+                xs: "inline-block",
+                md: "block",
+              },
+            }}
           >
             Sobre a
           </Typography>
@@ -35,8 +42,15 @@ const TituloSobre = () => {
             sx={{
               fontFamily: "fluido",
               marginTop: "-40px",
-              marginLeft: "60px",
-              fontSize: "150px",
+              marginLeft: {
+                md: "60px",
+                xs: "20px",
+              },
+              fontSize: "100px",
+              display: {
+                xs: "inline-block",
+                md: "block",
+              },
             }}
           >
             Fluída
@@ -45,28 +59,18 @@ const TituloSobre = () => {
 
         <Box
           sx={{
-            position: "absolute",
-            top: "120px",
-            left: "300px",
-            zIndex: "2",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: "3",
           }}
         >
           <Image
-            src="/img/sobre/quatroMeninas.jpg"
-            alt="Quatro meninas"
-            width={600}
-            height={600}
-          />
-        </Box>
-
-        <Box
-          sx={{ position: "absolute", bottom: "0", right: "0", zIndex: "1" }}
-        >
-          <Image
-            src="/img/sobre/fundo.jpg"
-            alt="Fundo colorido"
-            width={500}
-            height={750}
+            src="/img/sobre.png"
+            alt="Sobre a Fluída"
+            width={800}
+            height={800}
           />
         </Box>
       </Box>
