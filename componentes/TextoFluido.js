@@ -22,7 +22,10 @@ const TextoFluido = ({ children }) => {
             color: "white",
             display: "block",
             content: `"${children}"`,
-            marginBottom: "-60px",
+            marginBottom: {
+              md: "-60px",
+              xs: "-40px",
+            },
             WebkitTextStroke: "2px white",
             WebkitTextFillColor: "transparent",
             zIndex: "2",
@@ -31,7 +34,10 @@ const TextoFluido = ({ children }) => {
             color: "white",
             display: "block",
             content: `"${children}"`,
-            marginTop: "-60px",
+            marginTop: {
+              xs: "-40px",
+              md: "-60px",
+            },
             WebkitTextStroke: "3px white",
             WebkitTextFillColor: "transparent",
             zIndex: "2",

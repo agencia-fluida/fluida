@@ -23,6 +23,10 @@ const TituloSobre = () => {
             right: "30%",
             top: "-10%",
             zIndex: "3",
+            display: {
+              xs: "none",
+              md: "block",
+            },
           }}
         >
           <Typography
@@ -65,6 +69,22 @@ const TituloSobre = () => {
             Fluída
           </Typography>
         </Box>
+
+        <Typography
+          variant="h1"
+          component="h2"
+          sx={{
+            fontFamily: "fluido",
+            fontSize: "80px",
+            display: {
+              xs: "block",
+              md: "none",
+            },
+            textAlign: "center",
+          }}
+        >
+          Sobre a Fluída
+        </Typography>
 
         <Box
           sx={{
