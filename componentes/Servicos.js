@@ -57,10 +57,17 @@ const Servicos = () => {
           sx={{
             maxWidth: "xl",
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            gridTemplateColumns: {
+              md: "1fr 1fr 1fr 1fr",
+              xs: "1fr",
+            },
             gridGap: "20px",
             margin: "auto",
             marginTop: "100px",
+            paddingX: {
+              xs: "20px",
+              md: "0",
+            },
           }}
         >
           {categorias.map((categoria, index) => (
