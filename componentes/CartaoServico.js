@@ -15,12 +15,12 @@ import {
 
 import { ChevronRight } from "@mui/icons-material";
 
-const CartaoServico = ({ imagem, titulo, servicos }) => {
+const CartaoServico = ({ imagem, titulo, servicos, onClick }) => {
   const tema = useTheme();
 
   return (
     <>
-      <Card>
+      <Card onClick={onClick}>
         <CardContent
           sx={{
             display: "flex",
