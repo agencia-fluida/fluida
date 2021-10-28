@@ -57,6 +57,10 @@ const Flutuantes = () => {
           position: "relative",
           alignSelf: "center",
           marginTop: "100px",
+          paddingX: {
+            xs: "20px",
+            md: "0",
+          },
         }}
       >
         <Box
@@ -66,6 +70,10 @@ const Flutuantes = () => {
             left: "-600px",
             top: "45%",
             zIndex: "2",
+            display: {
+              xs: "none",
+              md: "block",
+            },
           }}
         >
           <Typography
@@ -86,11 +94,31 @@ const Flutuantes = () => {
           </Typography>
         </Box>
 
+        <Typography
+          variant="h1"
+          component="h2"
+          sx={{
+            fontFamily: "fluido",
+            fontSize: "100px",
+            display: {
+              xs: "block",
+              md: "none",
+            },
+            textAlign: "center",
+            marginBottom: "-60px",
+          }}
+        >
+          Flutuantes
+        </Typography>
+
         <Box
           sx={{
             display: "grid",
             gridGap: "20px",
-            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateColumns: {
+              xs: "1fr",
+              md: "1fr 1fr 1fr",
+            },
             marginTop: "100px",
             zIndex: "1",
           }}
