@@ -13,6 +13,10 @@ const Retangulo = ({ esquerda }) => {
           bgcolor: tema.palette.secondary.main,
           borderRadius: "0",
           alignSelf: esquerda ? "end" : "start",
+          display: {
+            md: "block",
+            xs: "none",
+          },
         }}
       />
     </>

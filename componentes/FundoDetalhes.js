@@ -9,6 +9,10 @@ const FundoDetalhes = () => {
         sx={{
           position: "relative",
           alignSelf: "stretch",
+          display: {
+            xs: "none",
+            md: "unset",
+          },
         }}
       >
         <Box

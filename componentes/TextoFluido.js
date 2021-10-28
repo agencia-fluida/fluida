@@ -9,13 +9,23 @@ const TextoFluido = ({ children }) => {
         variant="h1"
         sx={{
           fontFamily: "fluido",
-          fontSize: "150px",
+          fontSize: {
+            xs: "80px",
+            md: "120px",
+          },
           color: tema.palette.secondary.main,
+          textAlign: {
+            xs: "center",
+            md: "left",
+          },
           "&::before": {
             color: "white",
             display: "block",
             content: `"${children}"`,
-            marginBottom: "-80px",
+            marginBottom: {
+              md: "-60px",
+              xs: "-40px",
+            },
             WebkitTextStroke: "2px white",
             WebkitTextFillColor: "transparent",
             zIndex: "2",
@@ -24,7 +34,10 @@ const TextoFluido = ({ children }) => {
             color: "white",
             display: "block",
             content: `"${children}"`,
-            marginTop: "-80px",
+            marginTop: {
+              xs: "-40px",
+              md: "-60px",
+            },
             WebkitTextStroke: "3px white",
             WebkitTextFillColor: "transparent",
             zIndex: "2",

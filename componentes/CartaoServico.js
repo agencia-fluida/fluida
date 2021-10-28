@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTheme } from "@emotion/react";
 
 import {
+  Box,
   Card,
   CardContent,
   Typography,
@@ -14,12 +15,12 @@ import {
 
 import { ChevronRight } from "@mui/icons-material";
 
-const CartaoServico = ({ imagem, titulo, servicos }) => {
+const CartaoServico = ({ imagem, titulo, servicos, onClick }) => {
   const tema = useTheme();
 
   return (
     <>
-      <Card>
+      <Card onClick={onClick}>
         <CardContent
           sx={{
             display: "flex",
@@ -41,13 +42,23 @@ const CartaoServico = ({ imagem, titulo, servicos }) => {
             {titulo}
           </Typography>
 
-          <ul style={{ marginTop: "30px" }}>
-            {servicos.map((servico, index) => (
-              <li key={index} style={{ marginTop: "15px" }}>
-                {servico}
-              </li>
-            ))}
-          </ul>
+          <Box
+            sx={{
+              marginTop: "30px",
+              display: {
+                xs: "none",
+                md: "block",
+              },
+            }}
+          >
+            <ul>
+              {servicos.map((servico, index) => (
+                <li key={index} style={{ marginTop: "15px" }}>
+                  {servico}
+                </li>
+              ))}
+            </ul>
+          </Box>
         </CardContent>
       </Card>
     </>

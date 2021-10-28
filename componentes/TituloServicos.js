@@ -14,49 +14,47 @@ const TituloServicos = () => {
         sx={{
           margin: "auto",
           maxWidth: "lg",
-          height: "800px",
+          maxHeight: {
+            xs: "80vh",
+            md: "100vh",
+          },
           position: "relative",
         }}
       >
         <Box
           sx={{
-            position: "absolute",
-            top: "0",
-            left: "0",
+            width: "100%",
+            position: {
+              xs: "flex",
+              md: "absolute",
+            },
+            top: "25px",
+            left: "25px",
+            justifyContent: "center",
+            alignItems: "center",
             zIndex: "3",
           }}
         >
           <TextoFluido>Nossos servicos</TextoFluido>
         </Box>
-        <Box
-          sx={{
-            position: "absolute",
-            zIndex: 1,
-            bottom: "10%",
-            right: "10%",
-          }}
-        >
-          <Image
-            src="/img/servicos/servicos.jpg"
-            width={750}
-            height={500}
-            alt="Serviços"
-          />
-        </Box>
 
         <Box
           sx={{
-            position: "absolute",
-            zIndex: 0,
-            bottom: "0",
-            right: "0",
+            width: "100%",
+            display: "flex",
+            justifyContent: {
+              xs: "center",
+              md: "end",
+            },
+            alignItems: "center",
+            zIndex: "3",
           }}
         >
           <Image
-            src="/img/servicos/fundo.jpg"
-            width={500}
-            height={750}
-            alt="Fundo"
+            src="/img/servicos.png"
+            alt="Serviços"
+            width={800}
+            height={800}
           />
         </Box>
       </Box>

@@ -11,18 +11,22 @@ const Banner = () => {
       <Box
         sx={{
           maxWidth: {
-            xl: "90%",
-            sm: "lg",
+            md: "90%",
+            xs: "100%",
           },
           margin: "auto",
           display: "flex",
           flexDirection: "column",
+          justifyContent: {
+            sm: "center",
+            md: "start",
+          },
         }}
       >
         <Retangulo />
 
         <ContainerVideo altura="650px" videoSrc="/img/fundoInicio.webm">
-          <Box sx={{ margin: "auto" }}>
+          <Box sx={{ margin: { md: "auto" } }}>
             <Image
               src="/img/logoFluida.png"
               width={400}
@@ -34,11 +38,17 @@ const Banner = () => {
           <Typography
             sx={{
               zIndex: "inherit",
-              fontSize: "22px",
+              fontSize: {
+                xs: "20px",
+                md: "25px",
+              },
               fontWeight: "500",
               textTransform: "uppercase",
-              alignSelf: "end",
-              marginTop: "auto",
+              alignSelf: {
+                md: "end",
+                xs: "center",
+              },
+              marginTop: { md: "auto", xs: "100px" },
             }}
           >
             Para criar é preciso fluir

@@ -7,7 +7,14 @@ const CartaoSobre = ({ toggleMostrar }) => {
   const tema = useTheme();
   return (
     <>
-      <CartaoBase>
+      <CartaoBase
+        sx={{
+          marginX: {
+            xs: "20px",
+            md: "0",
+          },
+        }}
+      >
         <Paper
           sx={{
             bgcolor: tema.palette.secondary.main,

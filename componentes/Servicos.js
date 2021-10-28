@@ -1,9 +1,20 @@
-import { Container, Box } from "@mui/material";
+import { useState } from "react";
+import Image from "next/image";
+
+import { Container, Box, Typography } from "@mui/material";
+
+import { useTheme } from "@emotion/react";
 
 import TituloServicos from "./TituloServicos";
 import CartaoServico from "./CartaoServico";
+import InfoModal from "./InfoModal";
 
 const Servicos = () => {
+  const tema = useTheme();
+
+  const [modalServicos, setModalServicos] = useState(false);
+  const [selecionado, setSelecionado] = useState(null);
+
   const categorias = [
     {
       titulo: "Branding",
@@ -48,19 +59,68 @@ const Servicos = () => {
       ],
     },
   ];
+
+  const handleClick = (categoria) => {
+    console.log(categoria);
+    setSelecionado(categoria);
+    setModalServicos(true);
+  };
+
   return (
     <>
       <Box sx={{ marginTop: "100px" }}>
         <TituloServicos />
 
+        <InfoModal open={modalServicos} onClose={() => setModalServicos(false)}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Image
+              src={selecionado?.imagem}
+              alt={selecionado?.titulo}
+              width={100}
+              height={100}
+            />
+            <Typography
+              variant="h5"
+              sx={{
+                textAlign: "center",
+                marginTop: "30px",
+                color: tema.palette.primary.main,
+                fontWeight: "medium",
+              }}
+            >
+              {selecionado?.titulo}
+            </Typography>
+          </Box>
+
+          <ul style={{ marginTop: "50px" }}>
+            {selecionado?.servicos?.map((servico, index) => (
+              <li key={index} style={{ marginTop: "10px" }}>
+                {servico}
+              </li>
+            ))}
+          </ul>
+        </InfoModal>
         <Box
           sx={{
             maxWidth: "xl",
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            gridTemplateColumns: {
+              md: "1fr 1fr 1fr 1fr",
+              xs: "1fr",
+            },
             gridGap: "20px",
             margin: "auto",
             marginTop: "100px",
+            paddingX: {
+              xs: "20px",
+              md: "0",
+            },
           }}
         >
           {categorias.map((categoria, index) => (
@@ -69,6 +129,7 @@ const Servicos = () => {
               titulo={categoria.titulo}
               imagem={categoria.imagem}
               servicos={categoria.servicos}
+              onClick={() => handleClick(categoria)}
             />
           ))}
         </Box>

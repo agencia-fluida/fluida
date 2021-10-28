@@ -8,24 +8,41 @@ const TituloSobre = () => {
       <Box
         sx={{
           maxWidth: "lg",
-          height: "800px",
+          maxHeight: {
+            xs: "80vh",
+            md: "100vh",
+          },
           position: "relative",
-          bottom: "-50px",
           margin: "auto",
+          zIndex: "3",
         }}
       >
         <Box
           sx={{
             position: "absolute",
-            left: "25px",
-            top: "-100px",
+            right: "30%",
+            top: "-10%",
             zIndex: "3",
+            display: {
+              xs: "none",
+              md: "block",
+            },
           }}
         >
           <Typography
             variant="h1"
             component="h2"
-            sx={{ fontFamily: "fluido", fontSize: "150px" }}
+            sx={{
+              fontFamily: "fluido",
+              fontSize: {
+                xs: "80px",
+                md: "150px",
+              },
+              display: {
+                xs: "inline-block",
+                md: "block",
+              },
+            }}
           >
             Sobre a
           </Typography>
@@ -35,38 +52,57 @@ const TituloSobre = () => {
             sx={{
               fontFamily: "fluido",
               marginTop: "-40px",
-              marginLeft: "60px",
-              fontSize: "150px",
+              marginLeft: {
+                md: "60px",
+                xs: "20px",
+              },
+              fontSize: {
+                xs: "80px",
+                md: "150px",
+              },
+              display: {
+                xs: "inline-block",
+                md: "block",
+              },
             }}
           >
             Fluída
           </Typography>
         </Box>
 
+        <Typography
+          variant="h1"
+          component="h2"
+          sx={{
+            fontFamily: "fluido",
+            fontSize: "80px",
+            display: {
+              xs: "block",
+              md: "none",
+            },
+            textAlign: "center",
+          }}
+        >
+          Sobre a Fluída
+        </Typography>
+
         <Box
           sx={{
-            position: "absolute",
-            top: "120px",
-            left: "300px",
-            zIndex: "2",
+            width: "100%",
+            display: "flex",
+            justifyContent: {
+              xs: "center",
+              md: "start",
+            },
+            alignItems: "center",
+            zIndex: "3",
           }}
         >
           <Image
-            src="/img/sobre/quatroMeninas.jpg"
-            alt="Quatro meninas"
-            width={600}
-            height={600}
-          />
-        </Box>
-
-        <Box
-          sx={{ position: "absolute", bottom: "0", right: "0", zIndex: "1" }}
-        >
-          <Image
-            src="/img/sobre/fundo.jpg"
-            alt="Fundo colorido"
-            width={500}
-            height={750}
+            src="/img/sobre.png"
+            alt="Sobre a Fluída"
+            width={800}
+            height={800}
           />
         </Box>
       </Box>
