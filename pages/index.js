@@ -7,6 +7,7 @@ import Banner from "../componentes/Banner";
 import Sobre from "../componentes/Sobre";
 import Servicos from "../componentes/Servicos";
 import Flutuantes from "../componentes/Flutuantes";
+import Clientes from "../componentes/Clientes";
 
 const Index = () => {
   return (
@@ -40,6 +41,8 @@ const Index = () => {
         <Servicos />
 
         <Flutuantes />
+
+        <Clientes />
       </Box>
     </>
   );
