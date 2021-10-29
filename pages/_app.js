@@ -9,6 +9,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import tema from "../styles/tema";
 
 import Menu from "../componentes/Menu";
+import Footer from "../componentes/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -22,6 +23,8 @@ function MyApp({ Component, pageProps }) {
         <Menu />
 
         <Component {...pageProps} />
+
+        <Footer />
       </ThemeProvider>
     </>
   );
