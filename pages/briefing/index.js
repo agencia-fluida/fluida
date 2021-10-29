@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Box, TextField, Button, Typography } from "@mui/material";
 
-import TituloFormulario from "../componentes/TituloFormulario";
+import TituloFormulario from "../../componentes/TituloFormulario";
 
 const Briefing = () => {
   const [emailValido, setEmailValido] = useState(true);
@@ -41,6 +41,7 @@ const Briefing = () => {
 
         <Box
           component="form"
+          name="briefing"
           sx={{
             marginTop: "50px",
             paddingX: {
@@ -49,6 +50,8 @@ const Briefing = () => {
             },
           }}
           data-netlify="true"
+          method="post"
+          action="/briefing/sucesso"
         >
           <TextField
             variant="outlined"
