@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { useState } from "react";
 
 import {
@@ -26,8 +28,8 @@ const Menu = () => {
 
   const links = [
     { texto: "Home", url: "/" },
-    { texto: "Seja uma flutuante", url: "/" },
-    { texto: "Mande seu briefing", url: "/" },
+    { texto: "Seja uma flutuante", url: "/seja-flutuante" },
+    { texto: "Mande seu briefing", url: "/briefing" },
   ];
   const tema = useTheme();
   return (
@@ -45,9 +47,11 @@ const Menu = () => {
       >
         <List>
           {links.map((link, index) => (
-            <ListItem key={index} button>
-              <ListItemText>{link.texto}</ListItemText>
-            </ListItem>
+            <Link key={index} href={link.url}>
+              <ListItem onClick={toggleMenu} button>
+                <ListItemText>{link.texto}</ListItemText>
+              </ListItem>
+            </Link>
           ))}
         </List>
       </Drawer>
@@ -74,7 +78,9 @@ const Menu = () => {
             }}
           >
             {links.map((link, index) => (
-              <BotaoMenu>{link.texto}</BotaoMenu>
+              <Link key={index} href={link.url}>
+                <BotaoMenu onClick={toggleMenu}>{link.texto}</BotaoMenu>
+              </Link>
             ))}
           </Box>
 
