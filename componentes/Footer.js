@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Box, Typography, Button, IconButton } from "@mui/material";
 import { Instagram, WhatsApp, LinkedIn } from "@mui/icons-material";
 
@@ -49,21 +51,23 @@ const Footer = () => {
         </Box>
 
         <Box sx={{ marginTop: "50px" }}>
-          <Button
-            variant="contained"
-            sx={{
-              background: "none",
-              border: "2px solid #fff",
-              fontSize: {
-                xs: "15px",
-                md: "20px",
-              },
-              paddingX: "40px",
-              paddingY: "15px",
-            }}
-          >
-            Mande o seu briefing
-          </Button>
+          <Link href="/briefing">
+            <Button
+              variant="contained"
+              sx={{
+                background: "none",
+                border: "2px solid #fff",
+                fontSize: {
+                  xs: "15px",
+                  md: "20px",
+                },
+                paddingX: "40px",
+                paddingY: "15px",
+              }}
+            >
+              Mande o seu briefing
+            </Button>
+          </Link>
         </Box>
       </Box>
     </>

@@ -1,11 +1,12 @@
 import { Button } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
-const BotaoMenu = ({ children }) => {
+const BotaoMenu = ({ onClick, children }) => {
   const tema = useTheme();
   return (
     <>
       <Button
+        onClick={onClick}
         sx={{
           color: "white",
           textTransform: "none",
