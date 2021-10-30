@@ -61,14 +61,14 @@ const SejaFlutuante = () => {
             variant="outlined"
             label="Nome completo"
             placeholder="Larissa Barbosa Freitas"
-            name="nome"
+            name="nome-completo"
             sx={{ width: "100%" }}
             required
           />
 
           <TextField
             variant="outlined"
-            name="e-mail"
+            name="email"
             type="email"
             label="E-mail"
             placeholder="seu.email@gmail.com"
@@ -84,7 +84,7 @@ const SejaFlutuante = () => {
             label="Telefone"
             helperText="Não esqueça de incluir o DDD"
             sx={{ marginTop: 2, width: "100%" }}
-            inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+            inputProps={{ inputMode: "numeric" }}
             required
           >
             {(props) => <TextField {...props} />}
@@ -94,6 +94,7 @@ const SejaFlutuante = () => {
             variant="outlined"
             label="Link do seu portfólio"
             name="link-portfolio"
+            type="url"
             sx={{ marginTop: 2, width: "100%" }}
             required
           />

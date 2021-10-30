@@ -54,14 +54,14 @@ const Briefing = () => {
             variant="outlined"
             label="Nome completo"
             placeholder="Larissa Barbosa Freitas"
-            name="nome"
+            name="nome-completo"
             sx={{ width: "100%" }}
             required
           />
 
           <TextField
             variant="outlined"
-            name="email"
+            name="email-corporativo"
             type="email"
             label="E-mail corporativo"
             placeholder="seu.nome@suaempresa.com"
@@ -80,7 +80,7 @@ const Briefing = () => {
             label="Telefone"
             helperText="Não esqueça de incluir o DDD"
             sx={{ marginTop: 2, width: "100%" }}
-            inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+            inputProps={{ inputMode: "numeric" }}
             required
           >
             {(props) => <TextField {...props} />}
