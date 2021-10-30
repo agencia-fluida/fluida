@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { Box, TextField, Button, Typography } from "@mui/material";
 
+import InputMask from "react-input-mask";
+
 import TituloFormulario from "../componentes/TituloFormulario";
 
 const Briefing = () => {
@@ -67,6 +69,7 @@ const Briefing = () => {
           <TextField
             variant="outlined"
             name="email"
+            type="email"
             label="E-mail corporativo"
             placeholder="seu.nome@suaempresa.com"
             helperText="Não use e-mails com domínio gratuito (terminados em @gmail.com, @outlook.com etc)"
@@ -75,15 +78,20 @@ const Briefing = () => {
             sx={{ marginTop: 2, width: "100%" }}
             required
           />
-          <TextField
+
+          <InputMask
+            mask="(99) 99999-9999"
+            maskChar="_"
             variant="outlined"
             name="telefone"
             label="Telefone"
-            placeholder="11 97024-1683"
             helperText="Não esqueça de incluir o DDD"
             sx={{ marginTop: 2, width: "100%" }}
+            inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
             required
-          />
+          >
+            {(props) => <TextField {...props} />}
+          </InputMask>
 
           <TextField
             variant="outlined"
