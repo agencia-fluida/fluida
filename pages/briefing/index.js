@@ -51,7 +51,7 @@ const Briefing = () => {
           }}
           data-netlify="true"
           method="post"
-          action="/briefing/sucesso"
+          action="/"
         >
           <TextField
             variant="outlined"
