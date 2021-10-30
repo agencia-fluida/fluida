@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Container, Box, Typography } from "@mui/material";
 
 import { useTheme } from "@emotion/react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import TituloServicos from "./TituloServicos";
 import CartaoServico from "./CartaoServico";
@@ -11,6 +12,7 @@ import InfoModal from "./InfoModal";
 
 const Servicos = () => {
   const tema = useTheme();
+  const desktop = useMediaQuery(tema.breakpoints.up("md"));
 
   const [modalServicos, setModalServicos] = useState(false);
   const [selecionado, setSelecionado] = useState(null);
@@ -61,7 +63,8 @@ const Servicos = () => {
   ];
 
   const handleClick = (categoria) => {
-    console.log(categoria);
+    if (desktop) return;
+
     setSelecionado(categoria);
     setModalServicos(true);
   };
