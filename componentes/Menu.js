@@ -79,7 +79,7 @@ const Menu = () => {
           >
             {links.map((link, index) => (
               <Link key={index} href={link.url}>
-                <BotaoMenu onClick={toggleMenu}>{link.texto}</BotaoMenu>
+                <BotaoMenu>{link.texto}</BotaoMenu>
               </Link>
             ))}
           </Box>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Box, TextField, Button, Typography } from "@mui/material";
 
 import InputMask from "react-input-mask";
+import CompanyEmailValidator from "company-email-validator";
 
 import TituloFormulario from "../componentes/TituloFormulario";
 
@@ -10,18 +11,10 @@ const Briefing = () => {
   const [emailValido, setEmailValido] = useState(true);
 
   const validarEmail = (email) => {
-    const blacklist = ["gmail", "outlook", "yahoo"];
     let valido = true;
-
-    console.log(email);
-
-    blacklist.map((termo) => {
-      if (email.toLowerCase().includes(termo)) {
-        console.log("Inválido");
-        valido = false;
-      }
-    });
-
+    if (email) {
+      valido = CompanyEmailValidator.isCompanyEmail(email);
+    }
     setEmailValido(valido);
   };
 
