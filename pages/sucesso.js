@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Head from "next/head";
 
 import { Box, TextField, Button, Typography } from "@mui/material";
 
@@ -9,6 +10,14 @@ const Briefing = () => {
   const tema = useTheme();
   return (
     <>
+      <Head>
+        <title>Sucesso - Agência Fluída</title>
+        <meta
+          name="description"
+          content="O envio do seu formulário foi bem-sucedido."
+        />
+        <link rel="icon" href="/img/logoFluida.png" />
+      </Head>
       <Box
         sx={{
           paddingY: "100px",

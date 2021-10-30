@@ -1,9 +1,19 @@
 import { Box, TextField, Button, Typography } from "@mui/material";
+import Head from "next/head";
+
 import InputMask from "react-input-mask";
 
 const SejaFlutuante = () => {
   return (
     <>
+      <Head>
+        <title>Seja uma flutuante - Agência Fluída</title>
+        <meta
+          name="description"
+          content="Envie seus dados e trabalhe conosco."
+        />
+        <link rel="icon" href="/img/logoFluida.png" />
+      </Head>
       <Box
         sx={{
           paddingY: "100px",

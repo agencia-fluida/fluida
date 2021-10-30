@@ -3,12 +3,14 @@
   /*liquido fluido*/
   font-family: fluido;
   src: url(/fontes/LIQUIDO-Fluid.otf);
+  font-display: swap;
 }
 
 @font-face {
   /*liquido regular*/
   font-family: liquido;
   src: url(/fontes/LIQUIDO-Reguar.otf);
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: url(/fontes/Prompt-Thin.ttf);
   font-weight: 300;
   font-style: light;
+  font-display: swap;
 }
 
 @font-face {
@@ -25,6 +28,7 @@
   src: url(/fontes/Prompt-Light.ttf);
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +37,7 @@
   src: url(/fontes/Prompt-Medium.ttf);
   font-weight: 500;
   font-style: medium;
+  font-display: swap;
 }
 
 @font-face {
@@ -41,6 +46,7 @@
   src: url(/fontes/Prompt-Bold.ttf);
   font-weight: 700;
   font-style: bold;
+  font-display: swap;
 }
 
 a {

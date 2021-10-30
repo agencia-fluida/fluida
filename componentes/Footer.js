@@ -22,13 +22,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener"
           >
-            <IconButton>
+            <IconButton aria-label="Instagram">
               <Instagram fontSize="large" />
             </IconButton>
           </a>
 
           <a href="https://wa.me/+5511970241683" target="_blank" rel="noopener">
-            <IconButton>
+            <IconButton aria-label="WhatsApp">
               <WhatsApp fontSize="large" />
             </IconButton>
           </a>
@@ -38,7 +38,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener"
           >
-            <IconButton>
+            <IconButton aria-label="LinkedIn">
               <LinkedIn fontSize="large" />
             </IconButton>
           </a>

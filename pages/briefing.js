@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Head from "next/head";
 
 import { Box, TextField, Button, Typography } from "@mui/material";
 
@@ -20,6 +21,14 @@ const Briefing = () => {
 
   return (
     <>
+      <Head>
+        <title>Mande seu briefing - Agência Fluída</title>
+        <meta
+          name="description"
+          content="Envie o seu briefing para ser avaliado pela nossa agência"
+        />
+        <link rel="icon" href="/img/logoFluida.png" />
+      </Head>
       <Box
         sx={{
           paddingY: "100px",
