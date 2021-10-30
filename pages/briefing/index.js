@@ -50,9 +50,11 @@ const Briefing = () => {
             },
           }}
           data-netlify="true"
-          method="post"
-          action="/"
+          method="POST"
+          action="/briefing/sucesso"
         >
+          <input type="hidden" name="form-name" value="briefing" />
+
           <TextField
             variant="outlined"
             label="Nome completo"
