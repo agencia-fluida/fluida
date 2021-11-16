@@ -44,6 +44,11 @@ const Flutuantes = () => {
       foto: "/img/flutuantes/PaulaDiniz.jpg",
     },
     {
+      nome: "Clarissa Carvalho",
+      descricao: "Comercial",
+      foto: "/img/flutuantes/ClarissaCarvalho.png",
+    },
+    {
       nome: "Larissa Barbosa",
       descricao: "Webdesigner e programadora",
       foto: "/img/flutuantes/LarissaBarbosa.jpg",
