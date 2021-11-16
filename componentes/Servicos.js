@@ -113,7 +113,7 @@ const Servicos = () => {
             display: "grid",
             gridTemplateColumns: {
               md: "1fr 1fr 1fr 1fr",
-              xs: "1fr",
+              xs: "1fr 1fr",
             },
             gridGap: "20px",
             margin: "auto",
