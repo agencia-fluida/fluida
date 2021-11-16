@@ -28,8 +28,8 @@ const TituloServicos = () => {
               xs: "flex",
               md: "absolute",
             },
-            top: "25px",
-            left: "25px",
+            top: "-10%",
+            left: "-5%",
             justifyContent: "center",
             alignItems: "center",
             zIndex: "3",
@@ -53,8 +53,8 @@ const TituloServicos = () => {
           <Image
             src="/img/servicos.png"
             alt="Serviços"
-            width={800}
-            height={800}
+            width={1453}
+            height={1080}
           />
         </Box>
       </Box>

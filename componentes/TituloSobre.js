@@ -20,8 +20,8 @@ const TituloSobre = () => {
         <Box
           sx={{
             position: "absolute",
-            right: "30%",
-            top: "-10%",
+            left: "-10%",
+            top: "-20%",
             zIndex: "3",
             display: {
               xs: "none",
@@ -101,8 +101,8 @@ const TituloSobre = () => {
           <Image
             src="/img/sobre.png"
             alt="Sobre a Fluída"
-            width={800}
-            height={800}
+            width={1453}
+            height={1080}
           />
         </Box>
       </Box>
