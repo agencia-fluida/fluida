@@ -50,20 +50,23 @@ const Clientes = () => {
 
       <Box
         sx={{
-          display: "grid",
-          gridTemplateColumns: {
-            xs: "1fr 1fr",
-            md: "1fr 1fr 1fr 1fr",
-          },
-          gridGap: "50px",
-          paddingX: "50px",
+          display: "flex",
+          flexWrap: "wrap",
           justifyContent: "center",
-          alignItems: "center",
+          paddingX: "50px",
           marginTop: "50px",
         }}
       >
         {clientes.map((cliente, index) => (
-          <Box sx={{}}>
+          <Box
+            sx={{
+              flex: {
+                xs: "0 0 calc(50% - 60px)",
+                md: "0 0 calc(25% - 60px)",
+              },
+              margin: "30px",
+            }}
+          >
             <Image
               key={index}
               src={cliente.imagem}
