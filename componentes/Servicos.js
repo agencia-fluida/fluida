@@ -36,8 +36,6 @@ const Servicos = () => {
         "Social Listening",
         "Planejamento de campanhas de mídia e tráfego",
         "Construção de blog focado em SEO",
-        "Produção audiovisual de conteúdos educativos e de entretenimento: Web séries; Documentários; Cursos",
-        "Short contents para plataformas digitais.",
       ],
     },
     {
