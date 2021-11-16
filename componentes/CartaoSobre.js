@@ -21,7 +21,19 @@ const CartaoSobre = ({ toggleMostrar }) => {
             md: "0",
           },
           height: "500px",
-          overflow: "scroll",
+          overflowY: "scroll",
+          "&::-webkit-scrollbar": {
+            width: "8px",
+          },
+          "&::-webkit-scrollbar-track": {
+            boxShadow: "inset 0 0 6px rgba(0, 0, 0, 0.3)",
+          },
+
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "darkgrey",
+            outline: "1px solid #fff",
+            borderRadius: "8px",
+          },
         }}
       >
         <Paper
