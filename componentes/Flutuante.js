@@ -5,7 +5,7 @@ import { Box, Typography } from "@mui/material";
 const Flutuante = ({ nome, descricao, foto }) => {
   return (
     <>
-      <Box sx={{ position: "relative" }}>
+      <Box sx={{ position: "relative", filter: "grayscale(1)" }}>
         <Image
           src={foto}
           alt={nome}

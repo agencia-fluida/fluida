@@ -53,6 +53,11 @@ const Flutuantes = () => {
       descricao: "Webdesigner e programadora",
       foto: "/img/flutuantes/LarissaBarbosa.jpg",
     },
+    {
+      nome: "Carol Soares",
+      descricao: "cinegrafista e produção audiovisual",
+      foto: "/img/flutuantes/carol.jpg",
+    },
   ];
   return (
     <>
