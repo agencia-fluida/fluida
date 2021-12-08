@@ -7,45 +7,18 @@ const FundoDetalhes = () => {
     <>
       <Box
         sx={{
-          position: "relative",
-          alignSelf: "stretch",
-          display: {
-            xs: "none",
-            md: "unset",
+          width: "100%",
+          "& > div": {
+            position: "unset !important",
           },
         }}
       >
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: "40px",
-            left: "0",
-            zIndex: "2",
-          }}
-        >
-          <Image
-            src="/img/sobre/meninaListras.jpg"
-            alt="Menina listras"
-            width={400}
-            height={250}
-          />
-        </Box>
-
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: "20px",
-            left: "20px",
-            zIndex: "1",
-          }}
-        >
-          <Image
-            src="/img/servicos/fundo.jpg"
-            alt="Fundo azul"
-            width={400}
-            height={250}
-          />
-        </Box>
+        <Image
+          src="/img/sobreFluida.png"
+          alt="Fundo azul"
+          layout="fill"
+          className="custom-img"
+        />
       </Box>
     </>
   );

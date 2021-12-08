@@ -62,6 +62,7 @@ const Sobre = () => {
             },
             alignItems: "start",
             maxWidth: "xl",
+            marginTop: "100px",
           }}
         >
           <CartaoSobre toggleMostrar={toggleMostrar} />

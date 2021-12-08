@@ -68,3 +68,10 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
   border-radius: 8px;
 }
+
+.custom-img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
