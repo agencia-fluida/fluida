@@ -39,9 +39,9 @@ const Flutuantes = () => {
       foto: "/img/flutuantes/FlaviaGuitarrara.jpeg",
     },
     {
-      nome: "Paula Diniz",
-      descricao: "especialista em tráfego e mídia",
-      foto: "/img/flutuantes/PaulaDiniz.jpg",
+      nome: "Carol Soares",
+      descricao: "cinegrafista e produção audiovisual",
+      foto: "/img/flutuantes/carol.jpg",
     },
     {
       nome: "Clarissa Carvalho",
@@ -54,9 +54,9 @@ const Flutuantes = () => {
       foto: "/img/flutuantes/LarissaBarbosa.jpg",
     },
     {
-      nome: "Carol Soares",
-      descricao: "cinegrafista e produção audiovisual",
-      foto: "/img/flutuantes/carol.jpg",
+      nome: "Paula Diniz",
+      descricao: "especialista em tráfego e mídia",
+      foto: "/img/flutuantes/PaulaDiniz.jpg",
     },
   ];
   return (
