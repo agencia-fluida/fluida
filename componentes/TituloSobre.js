@@ -7,7 +7,6 @@ const TituloSobre = () => {
     <>
       <Box
         sx={{
-          border: "1px solid blue",
           maxWidth: "lg",
           margin: "auto",
           maxHeight: {
@@ -93,7 +92,6 @@ const TituloSobre = () => {
             "& > div": {
               position: "unset !important",
             },
-            border: "1px solid red",
           }}
         >
           <Image
