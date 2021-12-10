@@ -7,13 +7,14 @@ const TituloSobre = () => {
     <>
       <Box
         sx={{
+          border: "1px solid blue",
           maxWidth: "lg",
+          margin: "auto",
           maxHeight: {
             xs: "80vh",
             md: "100vh",
           },
           position: "relative",
-          margin: "auto",
           zIndex: "3",
         }}
       >
@@ -89,20 +90,17 @@ const TituloSobre = () => {
         <Box
           sx={{
             width: "100%",
-            display: "flex",
-            justifyContent: {
-              xs: "center",
-              md: "start",
+            "& > div": {
+              position: "unset !important",
             },
-            alignItems: "center",
-            zIndex: "3",
+            border: "1px solid red",
           }}
         >
           <Image
             src="/img/sobre.png"
             alt="Sobre a Fluída"
-            width={1453}
-            height={1080}
+            layout="fill"
+            className="custom-img"
           />
         </Box>
       </Box>

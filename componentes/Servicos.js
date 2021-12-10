@@ -69,7 +69,7 @@ const Servicos = () => {
 
   return (
     <>
-      <Box sx={{ marginTop: "100px" }}>
+      <Box sx={{ marginTop: "00px", maxWidth: "lg", margin: "auto" }}>
         <TituloServicos />
 
         <InfoModal open={modalServicos} onClose={() => setModalServicos(false)}>

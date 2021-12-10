@@ -51,7 +51,7 @@ const Sobre = () => {
           indivíduos e a experimentação como forma de inovação.
         </Typography>
       </InfoModal>
-      <Box sx={{ margin: "auto", marginY: "100px" }}>
+      <Box sx={{ margin: "auto", marginY: "100px", maxWidth: "lg" }}>
         <TituloSobre />
         <Box
           sx={{
