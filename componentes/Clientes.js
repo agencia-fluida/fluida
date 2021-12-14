@@ -60,6 +60,7 @@ const Clientes = () => {
         >
           {clientes.map((cliente, index) => (
             <Box
+              key={index}
               sx={{
                 flex: {
                   xs: "0 0 calc(50% - 60px)",
@@ -69,7 +70,6 @@ const Clientes = () => {
               }}
             >
               <Image
-                key={index}
                 src={cliente.imagem}
                 alt={cliente.nome}
                 width={200}

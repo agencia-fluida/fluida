@@ -7,7 +7,7 @@ const SejaFlutuante = () => {
   return (
     <>
       <Head>
-        <title>Seja uma flutuante - Agência Fluída</title>
+        <title>Seja flutuante - Agência Fluída</title>
         <meta
           name="description"
           content="Envie seus dados e trabalhe conosco."
@@ -33,7 +33,7 @@ const SejaFlutuante = () => {
             textAlign: "center",
           }}
         >
-          Seja uma flutuante
+          Seja flutuante
         </Typography>
 
         <Typography

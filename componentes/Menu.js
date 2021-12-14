@@ -28,7 +28,7 @@ const Menu = () => {
 
   const links = [
     { texto: "Home", url: "/" },
-    { texto: "Seja uma flutuante", url: "/seja-flutuante" },
+    { texto: "Seja flutuante", url: "/seja-flutuante" },
     { texto: "Mande seu briefing", url: "/briefing" },
   ];
   const tema = useTheme();
