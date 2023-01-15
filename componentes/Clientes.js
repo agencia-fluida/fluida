@@ -33,54 +33,55 @@ const Clientes = () => {
       imagem: "/img/clientes/warren.png",
     },
   ];
-  return (
-    <>
-      <Box sx={{ maxWidth: "lg", margin: "auto" }}>
-        <Typography
-          variant="h1"
-          component="h2"
-          sx={{
-            fontFamily: "fluido",
-            fontSize: "80px",
-            textAlign: "center",
-            marginTop: "100px",
-          }}
-        >
-          Clientes
-        </Typography>
+  return <>
+    <Box sx={{ maxWidth: "lg", margin: "auto" }}>
+      <Typography
+        variant="h1"
+        component="h2"
+        sx={{
+          fontFamily: "fluido",
+          fontSize: "80px",
+          textAlign: "center",
+          marginTop: "100px",
+        }}
+      >
+        Clientes
+      </Typography>
 
-        <Box
-          sx={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            paddingX: "50px",
-            marginTop: "50px",
-          }}
-        >
-          {clientes.map((cliente, index) => (
-            <Box
-              key={index}
-              sx={{
-                flex: {
-                  xs: "0 0 calc(50% - 60px)",
-                  md: "0 0 calc(25% - 60px)",
-                },
-                margin: "30px",
-              }}
-            >
-              <Image
-                src={cliente.imagem}
-                alt={cliente.nome}
-                width={200}
-                height={200}
-              />
-            </Box>
-          ))}
-        </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          paddingX: "50px",
+          marginTop: "50px",
+        }}
+      >
+        {clientes.map((cliente, index) => (
+          <Box
+            key={index}
+            sx={{
+              flex: {
+                xs: "0 0 calc(50% - 60px)",
+                md: "0 0 calc(25% - 60px)",
+              },
+              margin: "30px",
+            }}
+          >
+            <Image
+              src={cliente.imagem}
+              alt={cliente.nome}
+              width={200}
+              height={200}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+          </Box>
+        ))}
       </Box>
-    </>
-  );
+    </Box>
+  </>;
 };
 
 export default Clientes;

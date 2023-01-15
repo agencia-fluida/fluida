@@ -67,76 +67,77 @@ const Servicos = () => {
     setModalServicos(true);
   };
 
-  return (
-    <>
-      <Box sx={{ marginTop: "00px", maxWidth: "lg", margin: "auto" }}>
-        <TituloServicos />
+  return <>
+    <Box sx={{ marginTop: "00px", maxWidth: "lg", margin: "auto" }}>
+      <TituloServicos />
 
-        <InfoModal open={modalServicos} onClose={() => setModalServicos(false)}>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Image
-              src={selecionado?.imagem}
-              alt={selecionado?.titulo}
-              width={100}
-              height={100}
-            />
-            <Typography
-              variant="h5"
-              sx={{
-                textAlign: "center",
-                marginTop: "30px",
-                color: tema.palette.primary.main,
-                fontWeight: "medium",
-              }}
-            >
-              {selecionado?.titulo}
-            </Typography>
-          </Box>
-
-          <ul style={{ marginTop: "50px" }}>
-            {selecionado?.servicos?.map((servico, index) => (
-              <li key={index} style={{ marginTop: "10px" }}>
-                {servico}
-              </li>
-            ))}
-          </ul>
-        </InfoModal>
+      <InfoModal open={modalServicos} onClose={() => setModalServicos(false)}>
         <Box
           sx={{
-            maxWidth: "xl",
-            display: "grid",
-            gridTemplateColumns: {
-              md: "1fr 1fr 1fr 1fr",
-              xs: "1fr 1fr",
-            },
-            gridGap: "20px",
-            margin: "auto",
-            marginTop: "100px",
-            paddingX: {
-              xs: "20px",
-              md: "0",
-            },
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          {categorias.map((categoria, index) => (
-            <CartaoServico
-              key={index}
-              titulo={categoria.titulo}
-              imagem={categoria.imagem}
-              servicos={categoria.servicos}
-              onClick={() => handleClick(categoria)}
-            />
-          ))}
+          <Image
+            src={selecionado?.imagem}
+            alt={selecionado?.titulo}
+            width={100}
+            height={100}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
+          <Typography
+            variant="h5"
+            sx={{
+              textAlign: "center",
+              marginTop: "30px",
+              color: tema.palette.primary.main,
+              fontWeight: "medium",
+            }}
+          >
+            {selecionado?.titulo}
+          </Typography>
         </Box>
+
+        <ul style={{ marginTop: "50px" }}>
+          {selecionado?.servicos?.map((servico, index) => (
+            <li key={index} style={{ marginTop: "10px" }}>
+              {servico}
+            </li>
+          ))}
+        </ul>
+      </InfoModal>
+      <Box
+        sx={{
+          maxWidth: "xl",
+          display: "grid",
+          gridTemplateColumns: {
+            md: "1fr 1fr 1fr 1fr",
+            xs: "1fr 1fr",
+          },
+          gridGap: "20px",
+          margin: "auto",
+          marginTop: "100px",
+          paddingX: {
+            xs: "20px",
+            md: "0",
+          },
+        }}
+      >
+        {categorias.map((categoria, index) => (
+          <CartaoServico
+            key={index}
+            titulo={categoria.titulo}
+            imagem={categoria.imagem}
+            servicos={categoria.servicos}
+            onClick={() => handleClick(categoria)}
+          />
+        ))}
       </Box>
-    </>
-  );
+    </Box>
+  </>;
 };
 
 export default Servicos;
