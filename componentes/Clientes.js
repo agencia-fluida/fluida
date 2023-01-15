@@ -27,10 +27,34 @@ const Clientes = () => {
     {
       nome: "Sofá Digital",
       imagem: "/img/clientes/sofa.png",
+      css: {
+        filter: 'grayscale(1)'
+      }
     },
     {
       nome: "Warren",
       imagem: "/img/clientes/warren.png",
+    },
+    {
+      nome: "Novotel",
+      imagem: "/img/clientes/novotel.svg",
+      css: {
+        filter: 'brightness(0) invert(1)'
+      }
+    },
+    {
+      nome: "Grand Mercure",
+      imagem: "/img/clientes/grand-mercure.png",
+      css: {
+        filter: 'grayscale(1)'
+      }
+    },
+    {
+      nome: "Ibis",
+      imagem: "/img/clientes/ibis.png",
+      css: {
+        filter: 'grayscale(1)'
+      }
     },
   ];
   return <>
@@ -53,6 +77,7 @@ const Clientes = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
+          alignItems: "center",
           paddingX: "50px",
           marginTop: "50px",
         }}
@@ -75,7 +100,8 @@ const Clientes = () => {
               height={200}
               style={{
                 maxWidth: "100%",
-                height: "auto"
+                height: "auto",
+                ...cliente.css
               }} />
           </Box>
         ))}
