@@ -20,7 +20,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/ag.fluida/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <IconButton aria-label="Instagram">
               <Instagram fontSize="large" />
@@ -36,7 +36,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/company/ag%C3%AAncia-flu%C3%ADda/?viewAsMember=true"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <IconButton aria-label="LinkedIn">
               <LinkedIn fontSize="large" />
@@ -46,7 +46,7 @@ const Footer = () => {
         <Box sx={{ textAlign: "center", marginTop: "30px" }}>
           <Typography>Fluída</Typography>
           <Typography mt={1}>São Paulo - BR</Typography>
-          <Typography mt={1}>E-mail: fluida@vlcompany.com.br</Typography>
+          <Typography mt={1}>E-mail: ola@agenciafluida.com.br</Typography>
           <Typography mt={1}>WhatsApp: 11 97024-1683</Typography>
         </Box>
 
