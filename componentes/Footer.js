@@ -27,7 +27,7 @@ const Footer = () => {
             </IconButton>
           </a>
 
-          <a href="https://wa.me/+5511970241683" target="_blank" rel="noopener">
+          <a href="https://wa.me/+5511970241683" target="_blank" rel="noreferrer">
             <IconButton aria-label="WhatsApp">
               <WhatsApp fontSize="large" />
             </IconButton>
