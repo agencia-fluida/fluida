@@ -40,7 +40,6 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-        
       </Head>
 
       <Script id="google-tag-manager" strategy="afterInteractive">
@@ -51,7 +50,7 @@ function MyApp({ Component, pageProps }) {
         })(window,document,'script','dataLayer','GTM-KVR798H');`}
       </Script>
 
-      <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=G-R72L04HQ4T" strategy="afterInteractive"/>
+      <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=G-R72L04HQ4T" strategy="afterInteractive" />
 
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
