@@ -17,7 +17,7 @@ const BotaoMenu = ({ onClick, children }) => {
           marginLeft: "40px",
           "&:hover": {
             background: "none",
-            borderTop: `2px solid ${tema.palette.primary.main}`,
+            borderTop: `2px solid ${tema.palette.secondary.main}`,
           },
         }}
       >

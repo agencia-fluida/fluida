@@ -7,10 +7,10 @@ const tema = createTheme({
       default: "#262626",
     },
     primary: {
-      main: "#797ef6",
+      main: "#833CFC",
     },
     secondary: {
-      main: "#7dd6f6",
+      main: "#D5FF1F",
     },
   },
   typography: {

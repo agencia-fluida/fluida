@@ -27,9 +27,9 @@ const Banner = () => {
       <ContainerVideo altura="650px" videoSrc="/img/fundoInicio.webm">
         <Box sx={{ margin: { md: "auto" }, zIndex: '2' }}>
           <Image
-            src="/img/logoFluida.png"
-            width={400}
-            height={400}
+            src="/img/logo-nova-2.svg"
+            width={700}
+            height={500}
             alt="Agência Fluída"
             style={{
               maxWidth: "100%",

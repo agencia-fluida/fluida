@@ -27,7 +27,6 @@ const Briefing = () => {
           name="description"
           content="Envie o seu briefing para ser avaliado pela nossa agência"
         />
-        <link rel="icon" href="/img/logoFluida.png" />
       </Head>
       <Box
         sx={{

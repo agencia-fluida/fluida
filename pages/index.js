@@ -18,7 +18,7 @@ const Index = () => {
           name="description"
           content="Somos uma agência totalmente adaptável. Uma correnteza de mulheres com diversas habilidades, conectadas em projetos personalizados para marcas, agências e veículos."
         />
-        <link rel="icon" href="/img/logoFluida.png" />
+
       </Head>
 
       <Banner />
