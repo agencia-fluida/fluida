@@ -12,7 +12,7 @@ const SejaFlutuante = () => {
           name="description"
           content="Envie seus dados e trabalhe conosco."
         />
-        <link rel="icon" href="/img/logoFluida.png" />
+
       </Head>
       <Box
         sx={{
