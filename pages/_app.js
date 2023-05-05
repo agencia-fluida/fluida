@@ -68,12 +68,22 @@ function MyApp({ Component, pageProps }) {
       </Script>
 
       <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=G-R72L04HQ4T" strategy="afterInteractive" />
+      <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=UA-254550773-1" strategy="afterInteractive" />
 
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-R72L04HQ4T');`}
+      </Script>
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-254550773-1');
+`}
       </Script>
 
       <ThemeProvider theme={tema}>
