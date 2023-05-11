@@ -19,21 +19,6 @@ import Footer from "../componentes/Footer";
 
 function MyApp({ Component, pageProps }) {
 
-  const router = useRouter()
-
-  useEffect(() => {
-    import('react-facebook-pixel')
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.init('742267110547022') // facebookPixelId
-        ReactPixel.pageView()
-
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView()
-        })
-      })
-  }, [router.events])
-
 
   return (
     <>
@@ -69,15 +54,28 @@ function MyApp({ Component, pageProps }) {
 
       <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=G-R72L04HQ4T" strategy="afterInteractive" />
       <Script id="google-tag" src="https://www.googletagmanager.com/gtag/js?id=UA-254550773-1" strategy="afterInteractive" />
+        
+        <Script id="meta-pixel" strategy="afterInteractive">
+        {`!function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '742267110547022');
+        fbq('track', 'Lead');`}
+      </Script>
 
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics1" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-R72L04HQ4T');`}
       </Script>
 
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics2" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -94,6 +92,10 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
 
         <Footer />
+          
+          <noscript><img height="1" width="1" style="display:none"
+          src="https://www.facebook.com/tr?id=742267110547022&ev=PageView&noscript=1"
+          /></noscript>
       </ThemeProvider>
     </>
   );
